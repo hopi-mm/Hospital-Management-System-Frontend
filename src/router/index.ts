@@ -4,6 +4,7 @@ import Index from "@/views/Index.vue";
 import Home from "@/views/Home/Index.vue";
 import Appointment from "@/views/Appointment/Index.vue";
 import Test from "@/views/Appointment/Test.vue";
+import Auth from "@/views/Authentication/Index.vue";
 
 const routes : RouteRecordRaw[] = [
     {
@@ -26,6 +27,12 @@ const routes : RouteRecordRaw[] = [
         name: "Test",
         component: Test,
     },
+    {
+        path: '/auth',
+        name: "Auth",
+        component: Auth,
+        meta: { layout: 'auth' }
+    }
 ];
 
 const router = createRouter({

@@ -1,22 +1,23 @@
-<script setup lang="ts">
-//sidebar content 
-import AppSidebar from "@/components/AppSidebar.vue"
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-import { RouterView } from "vue-router"
-</script>
-
 <template>
-  <SidebarProvider>
-    <AppSidebar />
-    <main>
-      <SidebarTrigger />
-      <div class="ml-10">
-        <RouterView />
-      </div>
-    </main>
-  </SidebarProvider>
+  <div>
+    <!-- Check if current route is NOT auth -->
+    <MainLayout v-if="!isAuthPage">
+      <RouterView />
+    </MainLayout>
+
+    <!-- Render auth page directly without layout -->
+    <RouterView v-else />
+  </div>
 </template>
 
-<style scoped>
+<script setup lang="ts">
+import { useRoute } from 'vue-router'
+import { computed } from 'vue'
+import MainLayout from '@/layouts/MainLayout.vue' // your main layout component
 
-</style>
+const route = useRoute()
+
+const isAuthPage = computed(() => route.meta.layout === 'auth')
+</script>
+
+<style scoped></style>

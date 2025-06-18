@@ -7,19 +7,19 @@
                 <ChevronDown class="h-4 w-4 opacity-50" />
                 </Button>
             </PopoverTrigger>
-        <PopoverContent class="p-0 w-32">
-            <Command>
-            <CommandInput placeholder="Search hour..." />
-            <CommandList>
-                <CommandEmpty>No match found.</CommandEmpty>
-                <CommandGroup>
-                <CommandItem v-for="h in hours" :key="h" @select="hour = h">
-                    {{ h }}
-                </CommandItem>
-                </CommandGroup>
-            </CommandList>
-            </Command>
-        </PopoverContent>
+            <PopoverContent class="p-0 w-32">
+                <Command>
+                <CommandInput placeholder="Search hour..." />
+                <CommandList>
+                    <CommandEmpty>No match found.</CommandEmpty>
+                    <CommandGroup>
+                    <CommandItem v-for="h in hours" :key="h" @select="hour = h">
+                        {{ h }}
+                    </CommandItem>
+                    </CommandGroup>
+                </CommandList>
+                </Command>
+            </PopoverContent>
         </Popover>
 
         <!-- Minute -->
