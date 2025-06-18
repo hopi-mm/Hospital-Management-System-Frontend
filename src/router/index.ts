@@ -4,7 +4,7 @@ import Index from "@/views/Index.vue";
 import Home from "@/views/Home/Index.vue";
 import Appointment from "@/views/Appointment/Index.vue";
 import Test from "@/views/Appointment/Test.vue";
-import Auth from "@/views/Authentication/Index.vue";
+import Auth from "@/views/Auth/Index.vue";
 
 const routes : RouteRecordRaw[] = [
     {

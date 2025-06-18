@@ -16,7 +16,7 @@ const props = defineProps<CardProps>()
 </script>
 
 <template>
-  <Card class="border-none">
+  <Card >
     <CardHeader v-if="props.title || props.description">
       <CardTitle>{{ props.title }}</CardTitle>
       <CardDescription>{{ props.description }}</CardDescription>
