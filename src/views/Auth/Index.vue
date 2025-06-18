@@ -5,7 +5,7 @@
       <div class="text-center">
         <img src="https://docpulse.com/wp-content/uploads/2024/02/slider-small-1.jpg" alt="Hospital Illustration" class="w-80 mx-auto mb-6" />
         <h2 class="text-2xl font-semibold text-[#0077b6]">Your health, our priority</h2>
-        <p class="text-gray-600 mt-2 max-w-sm mx-auto">Managed securely by Medix HMS</p>
+        <p class="text-gray-600 mt-2 max-w-sm mx-auto">Managed securely by HMS</p>
       </div>
     </div>
 
